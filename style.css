@@ -1,0 +1,49 @@
+.border {
+  height: 200px;
+  width: 800px;
+  border: black solid 2px;
+  position: relative;
+}
+
+#ball1 {
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  background-color: pink;
+  transition: margin-left 0.5s ease-out;
+}
+
+#ball2 {
+  position: absolute;
+  bottom: 0;
+  left: 240px;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: lightseagreen;
+  transition: margin-left 1s ease-in-out 0.4s;
+}
+
+.border:active #ball1 {
+  margin-left: 100px;
+}
+
+.border:active #ball2 {
+  margin-left: 400px;
+}
+
+.border:active p {
+  transform: rotate(95deg);
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-top: auto;
+  margin-top: 45%;
+
+  transition: transform 0.5s;
+}
